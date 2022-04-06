@@ -1,0 +1,34 @@
+
+MegaRAID HWR Contoller Recovery tool. Version 01.02-007 August 03, 2011
+Copyright (c) 2006-2010 LSI Corp.
+Supports 1078 controller and its Successors.
+Usage:
+MegaRec -help                  : Display the list of options
+MegaRec -adpList               : Display identified MR controller(s)
+MegaRec -corruptInfo           : Display corruption information of controller
+MegaRec -m0flash <n> <image>   : Flash controller
+                               : where <n> is the controller index
+                               : and <image> is the image file to flash
+MegaRec -cleanflash <n> <image>: Erase Flash. Programs if image is Provided.
+                               : where <n> is the controller index
+                               : and <image> is the image file to flash
+MegaRec -readspd <n> <image>   : Read controller SPD to specified file
+                               : where <n> is the controller index
+                               : and <image> is the specified file name
+MegaRec -writespd <n> <image>  : Write controller SPD from specified file
+                               : where <n> is the controller index
+                               : and <image> is the specified file name
+MegaRec -readsbr <n> <image> [<byteCount>] : Read controller SBR to specified 
+                               : file where <n> is the controller index,
+                               : <byteCount> is the number of bytes of SBR 
+                               : to be read and is optional to specify
+                               : and <image> is the specified file name
+MegaRec -writesbr <n> <image>  : Write controller SBR from specified file
+                               : where <n> is the controller index
+                               : and <image> is the specified file name
+MegaRec -m0flash <n> <image> <-i2o/-fusion>     : Flash controller in I2O/FUSION mode
+MegaRec -cleanflash <n> <image> <-i2o/-fusion>  : Erase Flash. Programs if image is Provided in I2O/FUSION mode.
+MegaRec -readspd <n> <image> <-i2o/-fusion>     : Read controller SPD to specified file in I2O/FUSION mode
+MegaRec -writespd <n> <image> <-i2o/-fusion>    : Write controller SPD from specified file in I2O/FUSION mode
+MegaRec -readsbr <n> <image> [<byteCount>] <-i2o/-fusion> : Read controller SBR to specified file in I2O/FUSION mode
+MegaRec -writesbr <n> <image> <-i2o/-fusion>    : Write controller SBR from specified file in I2O/FUSION mode

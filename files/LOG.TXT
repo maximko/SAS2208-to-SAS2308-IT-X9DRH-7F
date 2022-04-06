@@ -1,0 +1,4 @@
+* * * * * * * * *    Log opened: Mon Apr  8 12:19:12 2013    * * * * * * * * *
+Error: Input file H not found!
+* * * * * * * * *    Log closed: Mon Apr  8 12:19:12 2013    * * * * * * * * *
+

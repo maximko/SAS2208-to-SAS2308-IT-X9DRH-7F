@@ -1,0 +1,1118 @@
+Fatal error - Command Tool invoked with wrong parameters
+Exit Code: 0x01
+
+    MegaOEM Ver 8.00.23 May 17, 2010
+
+    (c)Copyright 2010, LSI Corporation, All Rights Reserved.
+
+
+NOTE: The following options may be given at the end of any command below: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+MegaOEM -v 
+MegaOEM -help|-h|? 
+MegaOEM -adpCount 
+MegaOEM -AdpAllInfo -aN|-a0,1,2|-aALL  
+MegaOEM -AdpSetSASA xxxxxxxxxxxxxxxx -aN   
+MegaOEM -AdpSettings Read | Write -f FileName -aN 
+        -Read - reads INI file, forms MFC_DEFAULT structure and sends it to the FW. 
+        -Write - reads MFC_DEFAULT structure and creates an INI file 
+MegaOEM -AdpMfgSet -f fileName -aN  
+MegaOEM -AdpSetVerify -f fileName -aN|-a0,1,2|-aALL  
+MegaOEM -AdpSetVerifyRaw -f fileName -aN|-a0,1,2|-aALL  
+MegaOEM -AdpSetSubOEMId XX -aN	
+         XX - sub-OEM ID in Hexadecimal.
+MegaOEM -AdpGetSubOEMId  -aN	
+MegaOEM -adpUpdatePersistentPage -f filename - aN 
+MegaOEM -AdpNVRAM {-Read | -Write -f FileName}|-Clear 
+        [-StartOffset 0xXXXX ] [-EndOffset 0xXXXX] -aN 
+
+      Note:[-aALL] option assumes that the parameters specified are valid 
+       for all the Adapters. 
+
+    The following options may be given at the end of any command above: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+Exit Code: 0x00
+
+    MegaOEM Ver 8.00.23 May 17, 2010
+
+    (c)Copyright 2010, LSI Corporation, All Rights Reserved.
+
+
+NOTE: The following options may be given at the end of any command below: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+MegaOEM -v 
+MegaOEM -help|-h|? 
+MegaOEM -adpCount 
+MegaOEM -AdpAllInfo -aN|-a0,1,2|-aALL  
+MegaOEM -AdpSetSASA xxxxxxxxxxxxxxxx -aN   
+MegaOEM -AdpSettings Read | Write -f FileName -aN 
+        -Read - reads INI file, forms MFC_DEFAULT structure and sends it to the FW. 
+        -Write - reads MFC_DEFAULT structure and creates an INI file 
+MegaOEM -AdpMfgSet -f fileName -aN  
+MegaOEM -AdpSetVerify -f fileName -aN|-a0,1,2|-aALL  
+MegaOEM -AdpSetVerifyRaw -f fileName -aN|-a0,1,2|-aALL  
+MegaOEM -AdpSetSubOEMId XX -aN	
+         XX - sub-OEM ID in Hexadecimal.
+MegaOEM -AdpGetSubOEMId  -aN	
+MegaOEM -adpUpdatePersistentPage -f filename - aN 
+MegaOEM -AdpNVRAM {-Read | -Write -f FileName}|-Clear 
+        [-StartOffset 0xXXXX ] [-EndOffset 0xXXXX] -aN 
+
+      Note:[-aALL] option assumes that the parameters specified are valid 
+       for all the Adapters. 
+
+    The following options may be given at the end of any command above: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+Exit Code: 0x00
+
+Controller Count: 0.
+
+Exit Code: 0x00
+
+      MegaSCU SAS Customization Utility Ver 8.02.25  Nov 29, 2011
+
+    (c)Copyright 2011, LSI Corporation, All Rights Reserved.
+
+
+NOTE: The following options may be given at the end of any command below: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+MegaSCU -v 
+MegaSCU -help|-h|? 
+MegaSCU -adpCount 
+MegaSCU -AdpSetProp {CacheFlushInterval -val} | { RebuildRate -val} 
+    | {PatrolReadRate -val} | {BgiRate -val} | {CCRate -val} | {ForceSGPIO -val} 
+    | {ReconRate -val} | {SpinupDriveCount -val} | {SpinupDelay -val} 
+    | {CoercionMode -val} | {ClusterEnable -val} | {PredFailPollInterval -val} 
+    | {BatWarnDsbl -val} | {EccBucketSize -val} | {EccBucketLeakRate -val} 
+    | {AbortCCOnError -val} | AlarmEnbl | AlarmDsbl | AlarmSilence 
+    | {SMARTCpyBkEnbl -val} | {SSDSMARTCpyBkEnbl -val} | NCQEnbl | NCQDsbl 
+    | {MaintainPdFailHistoryEnbl -val} | {RstrHotSpareOnInsert -val} 
+    | {DisableOCR -val} | {BootWithPinnedCache -val} | {enblPI -val} | {PreventPIImport -val} 
+    | {EnblSpinDownUnConfigDrvs -val}|{UseDiskActivityforLocate -val} -aN|-a0,1,2|-aALL 
+    | AutoEnhancedImportEnbl | AutoEnhancedImportDsbl -aN|-a0,1,2|-aALL 
+    | {ExposeEnclDevicesEnbl -val} -aN|-a0,1,2|-aALL 
+    | {SpinDownTime -val} -aN|-a0,1,2|-aALL 
+    | {SpinUpEncDrvCnt -val} -aN|-a0,1,2|-aALL 
+    | {SpinUpEncDelay -val} | {Perfmode -val} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpSetProp -AutoDetectBackPlaneDsbl -val -aN|-a0,1,2|-aALL 
+       val - 0=Enable Auto Detect of SGPIO and i2c SEP. 
+             1=Disable Auto Detect of SGPIO. 
+             2=Disable Auto Detect of i2c SEP. 
+             3=Disable Auto Detect of SGPIO and i2c SEP. 
+MegaSCU -AdpSetProp -CopyBackDsbl -val -aN|-a0,1,2|-aALL 
+       val - 0=Enable Copyback. 
+             1=Disable Copyback. 
+MegaSCU -AdpSetProp -EnableJBOD -val -aN|-a0,1,2|-aALL 
+       val - 0=Disable JBOD mode. 
+             1=Enable JBOD mode. 
+MegaSCU -AdpSetProp -DsblCacheBypass -val -aN|-a0,1,2|-aALL 
+       val - 0=Enable Cache Bypass. 
+             1=Disable Cache Bypass. 
+MegaSCU -AdpSetProp -LoadBalanceMode -val -aN|-a0,1,2|-aALL 
+       val - 0=Auto Load balance mode. 
+             1=Disable Load balance mode. 
+MegaSCU -AdpSetProp -UseFDEOnlyEncrypt -val -aN|-a0,1,2|-aALL 
+       val - 0=FDE and controller encryption (if HW supports) is allowed. 
+             1=Only support FDE encryption, disallow controller encryption. 
+MegaSCU -AdpSetProp -PrCorrectUncfgdAreas -val -aN|-a0,1,2|-aALL 
+       val - 0= Correcting Media error during PR is disabled. 
+             1=Correcting Media error during PR is allowed. 
+MegaSCU -AdpSetProp -DsblSpinDownHSP -val -aN|-a0,1,2|-aALL 
+       val - 0= Spinning down the Hot Spare is enabled. 
+             1=Spinning down the Hot Spare is disabled. 
+MegaSCU -AdpSetProp -DefaultLdPSPolicy -Automatic| -None | -Maximum| -MaximumWithoutCaching -aN|-a0,1,2|-aALL 
+MegaSCU -AdpSetProp -DisableLdPS -interval n1 -time n2 -aN|-a0,1,2|-aALL 
+       where n1 is the number of hours beginning at time n2 
+       where n2 is the number of minutes from 12:00am 
+MegaSCU -AdpSetProp -ENABLEEGHSP -val -aN|-a0,1,2|-aALL 
+       val - 0= Disabled Emergency GHSP. 
+             1= Enabled Emergency GHSP. 
+MegaSCU -AdpSetProp -ENABLEEUG -val -aN|-a0,1,2|-aALL 
+       val - 0= Disabled Emergency UG as Spare. 
+             1= Enabled Emergency UG as Spare. 
+MegaSCU -AdpSetProp -ENABLEESMARTER -val -aN|-a0,1,2|-aALL 
+       val - 0= Disabled Emergancy Spare as Smarter. 
+             1= Enabled Emergancy Spare as Smarter. 
+MegaSCU -AdpSetProp -DPMenable -val -aN|-a0,1,2|-aALL 
+       val - 0=Disable Drive Performance Monitoring . 
+             1=Enable Drive Performance Monitoring. 
+MegaSCU -AdpSetProp -SupportSSDPatrolRead -val -aN|-a0,1,2|-aALL 
+       val - 0=Disable Patrol read for SSD drives . 
+             1=Enable Patrol read for SSD drives. 
+MegaSCU -AdpGetProp CacheFlushInterval | RebuildRate | PatrolReadRate | ForceSGPIO 
+    | BgiRate | CCRate | ReconRate | SpinupDriveCount | SpinupDelay 
+    | CoercionMode | ClusterEnable | PredFailPollInterval | BatWarnDsbl 
+    | EccBucketSize | EccBucketLeakRate | EccBucketCount | AbortCCOnError 
+    | AlarmDsply | SMARTCpyBkEnbl | SSDSMARTCpyBkEnbl | NCQDsply 
+    | MaintainPdFailHistoryEnbl | RstrHotSpareOnInsert 
+    | EnblSpinDownUnConfigDrvs  | DisableOCR 
+    | BootWithPinnedCache | enblPI  | preventPiImport  | AutoEnhancedImportDsply | AutoDetectBackPlaneDsbl 
+    | CopyBackDsbl | LoadBalanceMode | UseFDEOnlyEncrypt | WBSupport | EnableJBOD 
+    | DsblCacheBypass | ExposeEnclDevicesEnbl | SpinDownTime 
+    | PrCorrectUncfgdAreas | UseDiskActivityforLocate 
+    | DefaultLdPSPolicy | DisableLdPsInterval | DisableLdPsTime | SpinUpEncDrvCnt | SpinUpEncDelay 
+    | ENABLEEGHSP | ENABLEEUG | ENABLEESMARTER | Perfmode | -DPMenable -aN|-a0,1,2|-aALL 
+    | DsblSpinDownHSP -aN|-a0,1,2|-aALL 
+MegaSCU -AdpAllInfo -aN|-a0,1,2|-aALL  
+MegaSCU -AdpGetTime -aN|-a0,1,2|-aALL  
+MegaSCU -AdpSetTime yyyymmdd hh:mm:ss -aN   
+MegaSCU -AdpSetSASA xxxxxxxxxxxxxxxx -aN   
+MegaSCU -AdpBIOS -Enbl |-Dsbl | -SOE | -BE | EnblAutoSelectBootLd | DsblAutoSelectBootLd | -Dsply -aN|-a0,1,2|-aALL 
+MegaSCU -AdpBootDrive {-Set {-Lx | -physdrv[E0:S0]}} | {-Unset {-Lx | -physdrv[E0:S0]}} |-Get -aN|-a0,1,2|-aALL 
+MegaSCU -AdpAutoRbld -Enbl|-Dsbl|-Dsply -aN|-a0,1,2|-aALL
+MegaSCU -AdpCacheFlush -aN|-a0,1,2|-aALL
+MegaSCU -AdpPR -Dsbl|EnblAuto|EnblMan|Start|Suspend|Resume|Stop|Info 
+         |{SetDelay Val}|{-SetStartTime yyyymmdd hh}|{maxConcurrentPD Val} -aN|-a0,1,2|-aALL
+MegaSCU -AdpCcSched -Dsbl|-Info|{-ModeConc | -ModeSeq [-ExcludeLD -LN|-L0,1,2]
+   [-SetStartTime yyyymmdd hh ] [-SetDelay val ] } -aN|-a0,1,2|-aALL
+MegaSCU -AdpCcSched -SetStartTime yyyymmdd hh -aN|-a0,1,2|-aALL
+MegaSCU -AdpCcSched -SetDelay val  -aN|-a0,1,2|-aALL
+MegaSCU -FwTermLog -BBUoff|BBUoffTemp|BBUon|BBUGet|Dsply|Clear -aN|-a0,1,2|-aALL
+MegaSCU -AdpAlILog -aN|-a0,1,2|-aALL 
+MegaSCU -AdpDiag [val] -aN|-a0,1,2|-aALL
+          val - Time in second.
+MegaSCU -AdpBatTest -aN|-a0,1,2|-aALL
+MegaSCU -AdpShutDown -aN|-a0,1,2|-aALL
+MegaSCU -AdpCfgPage -read|-write <isPersistent> pagetype <val> <pagenumber> <pageaddress> -f <filename> -aN 
+MegaSCU -AdpHwDevice -read deviceType <val> [bus <val> slaveAddr <val>] [[start offset] sz size] -f <filename> -aN 
+MegaSCU -AdpHwDevice -write deviceType <val> [bus <val> slaveAddr <val>] [start offset] -f <filename> -aN 
+MegaSCU -PDList -aN|-a0,1,2|-aALL 
+MegaSCU -PDGetNum -aN|-a0,1,2|-aALL 
+MegaSCU -pdInfo -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL  
+MegaSCU -PDOnline  -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDOffline -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDMakeGood -PhysDrv[E0:S0,E1:S1,...] | [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -PDMakeJBOD -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDHSP {-Set [-Dedicated [-ArrayN|-Array0,1,2...]] [-EnclAffinity] [-nonRevertible]} 
+     |-Rmv -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDRbld -Start|-Stop|-Suspend|-Resume|-ShowProg |-ProgDsply 
+        -PhysDrv [E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL  
+MegaSCU -PDClear -Start|-Stop|-ShowProg |-ProgDsply 
+        -PhysDrv [E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL  
+MegaSCU -PdLocate {[-start] | -stop} -physdrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PdMarkMissing -physdrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PdGetMissing -aN|-a0,1,2|-aALL 
+MegaSCU -PdReplaceMissing -physdrv[E0:S0] -arrayA, -rowB -aN 
+MegaSCU -PdPrpRmv [-UnDo] -physdrv[E0:S0] -aN|-a0,1,2|-aALL  
+MegaSCU -EncInfo -aN|-a0,1,2|-aALL 
+MegaSCU -EncStatus -aN|-a0,1,2|-aALL 
+MegaSCU -PhyInfo -phyM -aN|-a0,1,2|-aALL  
+MegaSCU -PdFwDownload [offline][ForceActivate] {[-SataBridge] -PhysDrv[0:1] }|{-EncdevId[devId1]} -f <filename> -aN|-a0,1,2|-aALL 
+MegaSCU -LDInfo -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDSetProp  {-Name LdNamestring} | -RW|RO|Blocked|RemoveBlocked | WT|WB|ForcedWB [-Immediate] |RA|NORA|ADRA 
+        | Cached|Direct | -EnDskCache|DisDskCache | CachedBadBBU|NoCachedBadBBU
+        -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDSetPowerPolicy -Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching 
+        -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDGetProp  -Cache | -Access | -Name | -DskCache | -PSPolicy | Consistency -Lx|-L0,1,2|-LALL  
+        -aN|-a0,1,2|-aALL 
+MegaSCU -LDInit {-Start [-full]}|-Abort|-ShowProg|-ProgDsply -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -LDCC {-Start [-force]}|-Abort|-Suspend|-Resume|-ShowProg|-ProgDsply -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -LDBI -Enbl|-Dsbl|-getSetting|-Abort|-Suspend|-Resume|-ShowProg|-ProgDsply -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL  
+MegaSCU -LDRecon {-Start -rX [{-Add | -Rmv} -Physdrv[E0:S0,...]]}|-ShowProg|-ProgDsply 
+        -Lx -aN 
+MegaSCU -LdPdInfo -aN|-a0,1,2|-aALL 
+MegaSCU -LDGetNum -aN|-a0,1,2|-aALL 
+MegaSCU -LDBBMClr -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -getLdExpansionInfo -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LdExpansion -pN -dontExpandArray -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -GetBbtEntries -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -Cachecade -assign|-remove -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL
+MegaSCU -CfgLdAdd -rX[E0:S0,E1:S1,...] [WT|WB] [NORA|RA|ADRA] [Direct|Cached]
+        [CachedBadBBU|NoCachedBadBBU] [-szXXX [-szYYY ...]]
+        [-strpszM] [-Hsp[E0:S0,...]] [-AfterLdX] [-Force]|[FDE|CtrlBased]  
+        [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching]  [-Cache] [-enblPI] -aN 
+MegaSCU -CfgCacheCadeAdd [-rX] -Physdrv[E0:S0,...] {-Name LdNamestring} [WT|WB|ForcedWB] [-assign -LX|L0,2,5..|LALL] -aN|-a0,1,2|-aALL 
+MegaSCU -CfgEachDskRaid0 [WT|WB] [NORA|RA|ADRA] [Direct|Cached] [-enblPI] 
+        [CachedBadBBU|NoCachedBadBBU] [-strpszM]|[FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN|-a0,1,2|-aALL
+MegaSCU -CfgClr [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -CfgDsply -aN|-a0,1,2|-aALL 
+MegaSCU -CfgCacheCadeDsply -aN|-a0,1,2|-aALL 
+MegaSCU -CfgLdDel -LX|-L0,2,5...|-LALL [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -CfgCacheCadeDel -LX|-L0,2,5...|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -CfgFreeSpaceinfo -aN|-a0,1,2|-aALL 
+MegaSCU -CfgSpanAdd -r10 -Array0[E0:S0,E1:S1] -Array1[E0:S0,E1:S1] [-ArrayX[E0:S0,E1:S1] ...] 
+        [WT|WB] [NORA|RA|ADRA] [Direct|Cached] [CachedBadBBU|NoCachedBadBBU]
+        [-szXXX[-szYYY ...]][-strpszM][-AfterLdX][-Force]|[FDE|CtrlBased] 
+        [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN 
+MegaSCU -CfgSpanAdd -r50 -Array0[E0:S0,E1:S1,E2:S2,...] -Array1[E0:S0,E1:S1,E2:S2,...] 
+        [-ArrayX[E0:S0,E1:S1,E2:S2,...] ...] [WT|WB] [NORA|RA|ADRA] [Direct|Cached] 
+        [CachedBadBBU|NoCachedBadBBU][-szXXX[-szYYY ...]][-strpszM][-AfterLdX][-Force]| 
+        [FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN 
+MegaSCU -CfgSpanAdd -r60 -Array0[E0:S0,E1:S1,E2:S2,E3,S3...] -Array1[E0:S0,E1:S1,E2:S2,E3,S3...] 
+        [-ArrayX[E0:S0,E1:S1,E2:S2,E3,S3...] ...] [WT|WB] [NORA|RA|ADRA] [Direct|Cached] 
+        [CachedBadBBU|NoCachedBadBBU][-szXXX[-szYYY ...]][-strpszM][-AfterLdX][-Force]| 
+        [FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN 
+MegaSCU -CfgAllFreeDrv -rX [-SATAOnly] [-SpanCount XXX] [WT|WB] [NORA|RA|ADRA] 
+        [Direct|Cached] [CachedBadBBU|NoCachedBadBBU] [-strpszM]
+        [-HspCount XX [-HspType -Dedicated|-EnclAffinity|-nonRevertible]]|
+        [FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI]-aN 
+MegaSCU -CfgSave -f filename -aN   
+MegaSCU -CfgRestore -f filename -aN   
+MegaSCU -CfgForeign -Scan | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Dsply [x] | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Preview [x] | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Import [x] | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Clear [x]|[-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+        x - index of foreign configurations. Optional. All by default. 
+MegaSCU -AdpEventLog -GetEventLogInfo -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetEvents {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetSinceShutdown {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetSinceReboot {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -IncludeDeleted {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetLatest n {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetCCIncon -f <fileName> -LX|-L0,2,5...|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -Clear -aN|-a0,1,2|-aALL 
+MegaSCU -AdpBbuCmd -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuStatus -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuCapacityInfo -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuDesignInfo -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuProperties -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -BbuLearn -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -BbuMfgSleep -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -BbuMfgSeal -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -getBbumodes  -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -SetBbuProperties -f <fileName> -aN|-a0,1,2|-aALL 
+MegaSCU -AdpBbuCmd -GetGGEEPData offset [Hexaddress] NumBytes n -aN|-a0,1,2|-aALL 
+MegaSCU -AdpFacDefSet -aN 
+MegaSCU -AdpFactorySettings [-SetPciData|-SetMfgData|-SetMfcData|-SetSasAddress]   
+        -f FileName -aN
+        -SetPciData   reads INI file and sets FW PCI related data like Vendor 
+          ID, Device ID etc. 
+        -SetMfgData   reads INI file and updates FW manufacturing data like 
+          manufacturing data, revision, etc.  
+        -SetMfcData   reads INI file and updates FW manufacturing structure 
+        -SetSasAddress   reads INI file and updates SAS Address 
+MegaSCU -AdpSetSubOEMId XX -aN   
+          XX - sub-OEM ID in Hexadecimal.
+MegaSCU -AdpGetSubOEMId  -aN	
+MegaSCU -AdpSettings Read | Write -f FileName -aN 
+        -Read - reads INI file, forms MFC_DEFAULT structure and sends it to the FW. 
+        -Write - reads MFC_DEFAULT structure and creates an INI file 
+MegaSCU -AdpSetVerify -f fileName -aN|-a0,1,2|-aALL  
+MegaSCU -AdpSetVerifyRaw -f fileName -aN|-a0,1,2|-aALL  
+MegaSCU -adpUpdatePersistentPage -f filename - aN 
+MegaSCU -AdpNVRAM {-Read | -Write -f FileName}|-Clear 
+        [-StartOffset 0xXXXX ] [-EndOffset 0xXXXX] -aN 
+MegaSCU -AdpFwFlash -f filename [-NoSigChk] [-NoVerChk] [-FWTYPE n] -aN|-a0,1,2|-aALL  
+MegaSCU -AdpM0Flash -f filename  
+MegaSCU -BBUMfgSet -f filename  -aN|-a0,1,2|-aALL
+MegaSCU -adpFwDump 
+MegaSCU -AdpGetConnectorMode -ConnectorN|-Connector0,1|-ConnectorAll -aN|-a0,1,2|-aALL  
+MegaSCU -AdpSetConnectorMode -Internal|-External|-Auto -ConnectorN|-Connector0,1|-ConnectorAll -aN|-a0,1,2|-aALL  
+MegaSCU -PhyErrorCounters -aN|-a0,1,2|-aALL  
+MegaSCU -DirectPdMapping -Enbl|-Dsbl|-Dsply -aN|-a0,1,2|-aALL  
+MegaSCU -PDCpyBk -Start -PhysDrv[E0:S0,E1:S1] -aN|-a0,1,2|-aALL 
+MegaSCU -PDCpyBk -Stop|-Suspend|-Resume|-ShowProg|-ProgDsply -PhysDrv[E0:S0] -aN|-a0,1,2|-aALL 
+MegaSCU -PDInstantSecureErase -PhysDrv[E0:S0,E1:S1,...] | [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -LDMakeSecure -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -FullStrSeekTest -aN|-a0,1,2|-aALL 
+MegaSCU -Version -Cli|-Ctrl|-Pd -aN|-a0,1,2|-aALL 
+MegaSCU -CfgSpanAdd -rX -array0[E0:S1,E1:S1.....] array1[E0:S1,E1:S1.....] -szxxx -enblPI -aN|-a0,1,2|-aALL 
+MegaSCU -DestroySecurityKey | [-Force] -aN 
+MegaSCU -CreateSecurityKey -SecurityKey sssssssssss | [-Passphrase sssssssssss] |[-KeyID kkkkkkkkkkk] -aN 
+MegaSCU -CreateSecurityKey useEKMS -aN 
+MegaSCU -ChangeSecurityKey -OldSecurityKey sssssssssss | -SecurityKey sssssssssss| 
+          [-Passphrase sssssssssss] | [-KeyID kkkkkkkkkkk] -aN
+MegaSCU -ChangeSecurityKey -SecurityKey sssssssssss| 
+          [-Passphrase sssssssssss] | [-KeyID kkkkkkkkkkk] -aN
+MegaSCU -ChangeSecurityKey useEKMS -OldSecurityKey sssssssssss -aN
+MegaSCU -ChangeSecurityKey -useEKMS -aN
+MegaSCU -GetKeyID [-PhysDrv[E0:S0]] -aN 
+MegaSCU -SetKeyID -KeyID kkkkkkkkkkk -aN 
+MegaSCU -VerifySecurityKey -SecurityKey sssssssssss -aN 
+
+       sssssssssss  - It must be between eight and thirty-two 
+                      characters and contain at least one number, 
+                      one lowercase letter, one uppercase 
+                      letter and one non-alphanumeric character.
+       kkkkkkkkkkk -  Must be less than 256 characters. 
+MegaSCU -GetPreservedCacheList -aN|-a0,1,2|-aALL 
+MegaSCU -DiscardPreservedCache -Lx|-L0,1,2|-Lall -force -aN|-a0,1,2|-aALL 
+MegaSCU -AdpInfoCompare {-checkFw <string> | -checkID -hex | -checkBatt -val | -checkDimm -val} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpNameRtn -aN|-a0,1,2|-aALL 
+
+       sssssssssss  - It must be between eight and thirty-two 
+                      characters and contain at least one number, 
+                      one lowercase letter, one uppercase 
+                      letter and one non-alphanumeric character.
+       kkkkkkkkkkk -  Must be less than 256 characters. 
+MegaSCU -ShowSummary [-f filename] -aN
+MegaSCU -ELF -GetSafeId -aN|-a0,1,2|-aALL
+MegaSCU -ELF -ControllerFeatures -aN|-a0,1,2|-aALL
+MegaSCU -ELF -Applykey key <val> [Preview] -aN|-a0,1,2|-aALL
+MegaSCU -ELF -TransferToVault -aN|-a0,1,2|-aALL
+MegaSCU -ELF -DeactivateTrialKey -aN|-a0,1,2|-aALL
+MegaSCU -ELF -ReHostInfo -aN|-a0,1,2|-aALL
+MegaSCU -ELF -ReHostComplete -aN|-a0,1,2|-aALL
+MegaSCU -LDBreakMirror -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDViewMirror -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDJoinMirror -DataSrc <val> [-force] -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -SecureErase 
+	Start[
+		Simple|
+		[Normal   [ |ErasePattern ErasePatternA|ErasePattern ErasePatternA ErasePattern ErasePatternB]]|
+		[Thorough [ |ErasePattern ErasePatternA|ErasePattern ErasePatternA ErasePattern ErasePatternB]]]
+	| Stop
+	| ShowProg
+	| ProgDsply 
+	[-PhysDrv [E0:S0,E1:S1,...] | -Lx|-L0,1,2|-LALL] -aN|-a0,1,2|-aALL
+MegaSCU -Perfmon {-start -interval <val>} | {stop} | {-getresults -f <Filename>} -aN 
+MegaSCU -AdpGetVPD [-f filename] -aN|-a0,1,2 
+MegaSCU -AdpSetVPD -f filename -aN|-a0,1,2 
+MegaSCU -AdpGetPciInfo -aN|-a0,1,2|-aALL 
+MegaSCU -DpmStat -Dsply {lct | hist | ra | ext } [-physdrv[E0:S0]] -aN|-a0,1,2|-aALL  
+MegaSCU -DpmStat -Clear {lct | hist | ra | ext } -aN|-a0,1,2|-aALL  
+
+    Note: The directly connected drives can be specified as [:S] 
+
+    Wildcard '?' can be used to specify the enclosure ID for the drive in the 
+      only enclosure without direct connected device or the direct connected 
+      drives with no enclosure in the system.
+
+      Note:[-aALL] option assumes that the parameters specified are valid 
+       for all the Adapters. 
+
+    The following options may be given at the end of any command above: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+Exit Code: 0x00
+PCI information for Controller 1
+--------------------------------
+Bus Number      : 3
+Device Number   : 0
+Function Number : 0
+
+
+Exit Code: 0x00
+PCI information for Controller 0
+--------------------------------
+Bus Number      : 1
+Device Number   : 0
+Function Number : 0
+
+
+Exit Code: 0x00
+
+      MegaSCU SAS Customization Utility Ver 8.02.25  Nov 29, 2011
+
+    (c)Copyright 2011, LSI Corporation, All Rights Reserved.
+
+
+NOTE: The following options may be given at the end of any command below: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+MegaSCU -v 
+MegaSCU -help|-h|? 
+MegaSCU -adpCount 
+MegaSCU -AdpSetProp {CacheFlushInterval -val} | { RebuildRate -val} 
+    | {PatrolReadRate -val} | {BgiRate -val} | {CCRate -val} | {ForceSGPIO -val} 
+    | {ReconRate -val} | {SpinupDriveCount -val} | {SpinupDelay -val} 
+    | {CoercionMode -val} | {ClusterEnable -val} | {PredFailPollInterval -val} 
+    | {BatWarnDsbl -val} | {EccBucketSize -val} | {EccBucketLeakRate -val} 
+    | {AbortCCOnError -val} | AlarmEnbl | AlarmDsbl | AlarmSilence 
+    | {SMARTCpyBkEnbl -val} | {SSDSMARTCpyBkEnbl -val} | NCQEnbl | NCQDsbl 
+    | {MaintainPdFailHistoryEnbl -val} | {RstrHotSpareOnInsert -val} 
+    | {DisableOCR -val} | {BootWithPinnedCache -val} | {enblPI -val} | {PreventPIImport -val} 
+    | {EnblSpinDownUnConfigDrvs -val}|{UseDiskActivityforLocate -val} -aN|-a0,1,2|-aALL 
+    | AutoEnhancedImportEnbl | AutoEnhancedImportDsbl -aN|-a0,1,2|-aALL 
+    | {ExposeEnclDevicesEnbl -val} -aN|-a0,1,2|-aALL 
+    | {SpinDownTime -val} -aN|-a0,1,2|-aALL 
+    | {SpinUpEncDrvCnt -val} -aN|-a0,1,2|-aALL 
+    | {SpinUpEncDelay -val} | {Perfmode -val} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpSetProp -AutoDetectBackPlaneDsbl -val -aN|-a0,1,2|-aALL 
+       val - 0=Enable Auto Detect of SGPIO and i2c SEP. 
+             1=Disable Auto Detect of SGPIO. 
+             2=Disable Auto Detect of i2c SEP. 
+             3=Disable Auto Detect of SGPIO and i2c SEP. 
+MegaSCU -AdpSetProp -CopyBackDsbl -val -aN|-a0,1,2|-aALL 
+       val - 0=Enable Copyback. 
+             1=Disable Copyback. 
+MegaSCU -AdpSetProp -EnableJBOD -val -aN|-a0,1,2|-aALL 
+       val - 0=Disable JBOD mode. 
+             1=Enable JBOD mode. 
+MegaSCU -AdpSetProp -DsblCacheBypass -val -aN|-a0,1,2|-aALL 
+       val - 0=Enable Cache Bypass. 
+             1=Disable Cache Bypass. 
+MegaSCU -AdpSetProp -LoadBalanceMode -val -aN|-a0,1,2|-aALL 
+       val - 0=Auto Load balance mode. 
+             1=Disable Load balance mode. 
+MegaSCU -AdpSetProp -UseFDEOnlyEncrypt -val -aN|-a0,1,2|-aALL 
+       val - 0=FDE and controller encryption (if HW supports) is allowed. 
+             1=Only support FDE encryption, disallow controller encryption. 
+MegaSCU -AdpSetProp -PrCorrectUncfgdAreas -val -aN|-a0,1,2|-aALL 
+       val - 0= Correcting Media error during PR is disabled. 
+             1=Correcting Media error during PR is allowed. 
+MegaSCU -AdpSetProp -DsblSpinDownHSP -val -aN|-a0,1,2|-aALL 
+       val - 0= Spinning down the Hot Spare is enabled. 
+             1=Spinning down the Hot Spare is disabled. 
+MegaSCU -AdpSetProp -DefaultLdPSPolicy -Automatic| -None | -Maximum| -MaximumWithoutCaching -aN|-a0,1,2|-aALL 
+MegaSCU -AdpSetProp -DisableLdPS -interval n1 -time n2 -aN|-a0,1,2|-aALL 
+       where n1 is the number of hours beginning at time n2 
+       where n2 is the number of minutes from 12:00am 
+MegaSCU -AdpSetProp -ENABLEEGHSP -val -aN|-a0,1,2|-aALL 
+       val - 0= Disabled Emergency GHSP. 
+             1= Enabled Emergency GHSP. 
+MegaSCU -AdpSetProp -ENABLEEUG -val -aN|-a0,1,2|-aALL 
+       val - 0= Disabled Emergency UG as Spare. 
+             1= Enabled Emergency UG as Spare. 
+MegaSCU -AdpSetProp -ENABLEESMARTER -val -aN|-a0,1,2|-aALL 
+       val - 0= Disabled Emergancy Spare as Smarter. 
+             1= Enabled Emergancy Spare as Smarter. 
+MegaSCU -AdpSetProp -DPMenable -val -aN|-a0,1,2|-aALL 
+       val - 0=Disable Drive Performance Monitoring . 
+             1=Enable Drive Performance Monitoring. 
+MegaSCU -AdpSetProp -SupportSSDPatrolRead -val -aN|-a0,1,2|-aALL 
+       val - 0=Disable Patrol read for SSD drives . 
+             1=Enable Patrol read for SSD drives. 
+MegaSCU -AdpGetProp CacheFlushInterval | RebuildRate | PatrolReadRate | ForceSGPIO 
+    | BgiRate | CCRate | ReconRate | SpinupDriveCount | SpinupDelay 
+    | CoercionMode | ClusterEnable | PredFailPollInterval | BatWarnDsbl 
+    | EccBucketSize | EccBucketLeakRate | EccBucketCount | AbortCCOnError 
+    | AlarmDsply | SMARTCpyBkEnbl | SSDSMARTCpyBkEnbl | NCQDsply 
+    | MaintainPdFailHistoryEnbl | RstrHotSpareOnInsert 
+    | EnblSpinDownUnConfigDrvs  | DisableOCR 
+    | BootWithPinnedCache | enblPI  | preventPiImport  | AutoEnhancedImportDsply | AutoDetectBackPlaneDsbl 
+    | CopyBackDsbl | LoadBalanceMode | UseFDEOnlyEncrypt | WBSupport | EnableJBOD 
+    | DsblCacheBypass | ExposeEnclDevicesEnbl | SpinDownTime 
+    | PrCorrectUncfgdAreas | UseDiskActivityforLocate 
+    | DefaultLdPSPolicy | DisableLdPsInterval | DisableLdPsTime | SpinUpEncDrvCnt | SpinUpEncDelay 
+    | ENABLEEGHSP | ENABLEEUG | ENABLEESMARTER | Perfmode | -DPMenable -aN|-a0,1,2|-aALL 
+    | DsblSpinDownHSP -aN|-a0,1,2|-aALL 
+MegaSCU -AdpAllInfo -aN|-a0,1,2|-aALL  
+MegaSCU -AdpGetTime -aN|-a0,1,2|-aALL  
+MegaSCU -AdpSetTime yyyymmdd hh:mm:ss -aN   
+MegaSCU -AdpSetSASA xxxxxxxxxxxxxxxx -aN   
+MegaSCU -AdpBIOS -Enbl |-Dsbl | -SOE | -BE | EnblAutoSelectBootLd | DsblAutoSelectBootLd | -Dsply -aN|-a0,1,2|-aALL 
+MegaSCU -AdpBootDrive {-Set {-Lx | -physdrv[E0:S0]}} | {-Unset {-Lx | -physdrv[E0:S0]}} |-Get -aN|-a0,1,2|-aALL 
+MegaSCU -AdpAutoRbld -Enbl|-Dsbl|-Dsply -aN|-a0,1,2|-aALL
+MegaSCU -AdpCacheFlush -aN|-a0,1,2|-aALL
+MegaSCU -AdpPR -Dsbl|EnblAuto|EnblMan|Start|Suspend|Resume|Stop|Info 
+         |{SetDelay Val}|{-SetStartTime yyyymmdd hh}|{maxConcurrentPD Val} -aN|-a0,1,2|-aALL
+MegaSCU -AdpCcSched -Dsbl|-Info|{-ModeConc | -ModeSeq [-ExcludeLD -LN|-L0,1,2]
+   [-SetStartTime yyyymmdd hh ] [-SetDelay val ] } -aN|-a0,1,2|-aALL
+MegaSCU -AdpCcSched -SetStartTime yyyymmdd hh -aN|-a0,1,2|-aALL
+MegaSCU -AdpCcSched -SetDelay val  -aN|-a0,1,2|-aALL
+MegaSCU -FwTermLog -BBUoff|BBUoffTemp|BBUon|BBUGet|Dsply|Clear -aN|-a0,1,2|-aALL
+MegaSCU -AdpAlILog -aN|-a0,1,2|-aALL 
+MegaSCU -AdpDiag [val] -aN|-a0,1,2|-aALL
+          val - Time in second.
+MegaSCU -AdpBatTest -aN|-a0,1,2|-aALL
+MegaSCU -AdpShutDown -aN|-a0,1,2|-aALL
+MegaSCU -AdpCfgPage -read|-write <isPersistent> pagetype <val> <pagenumber> <pageaddress> -f <filename> -aN 
+MegaSCU -AdpHwDevice -read deviceType <val> [bus <val> slaveAddr <val>] [[start offset] sz size] -f <filename> -aN 
+MegaSCU -AdpHwDevice -write deviceType <val> [bus <val> slaveAddr <val>] [start offset] -f <filename> -aN 
+MegaSCU -PDList -aN|-a0,1,2|-aALL 
+MegaSCU -PDGetNum -aN|-a0,1,2|-aALL 
+MegaSCU -pdInfo -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL  
+MegaSCU -PDOnline  -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDOffline -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDMakeGood -PhysDrv[E0:S0,E1:S1,...] | [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -PDMakeJBOD -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDHSP {-Set [-Dedicated [-ArrayN|-Array0,1,2...]] [-EnclAffinity] [-nonRevertible]} 
+     |-Rmv -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDRbld -Start|-Stop|-Suspend|-Resume|-ShowProg |-ProgDsply 
+        -PhysDrv [E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL  
+MegaSCU -PDClear -Start|-Stop|-ShowProg |-ProgDsply 
+        -PhysDrv [E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL  
+MegaSCU -PdLocate {[-start] | -stop} -physdrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PdMarkMissing -physdrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PdGetMissing -aN|-a0,1,2|-aALL 
+MegaSCU -PdReplaceMissing -physdrv[E0:S0] -arrayA, -rowB -aN 
+MegaSCU -PdPrpRmv [-UnDo] -physdrv[E0:S0] -aN|-a0,1,2|-aALL  
+MegaSCU -EncInfo -aN|-a0,1,2|-aALL 
+MegaSCU -EncStatus -aN|-a0,1,2|-aALL 
+MegaSCU -PhyInfo -phyM -aN|-a0,1,2|-aALL  
+MegaSCU -PdFwDownload [offline][ForceActivate] {[-SataBridge] -PhysDrv[0:1] }|{-EncdevId[devId1]} -f <filename> -aN|-a0,1,2|-aALL 
+MegaSCU -LDInfo -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDSetProp  {-Name LdNamestring} | -RW|RO|Blocked|RemoveBlocked | WT|WB|ForcedWB [-Immediate] |RA|NORA|ADRA 
+        | Cached|Direct | -EnDskCache|DisDskCache | CachedBadBBU|NoCachedBadBBU
+        -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDSetPowerPolicy -Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching 
+        -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDGetProp  -Cache | -Access | -Name | -DskCache | -PSPolicy | Consistency -Lx|-L0,1,2|-LALL  
+        -aN|-a0,1,2|-aALL 
+MegaSCU -LDInit {-Start [-full]}|-Abort|-ShowProg|-ProgDsply -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -LDCC {-Start [-force]}|-Abort|-Suspend|-Resume|-ShowProg|-ProgDsply -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -LDBI -Enbl|-Dsbl|-getSetting|-Abort|-Suspend|-Resume|-ShowProg|-ProgDsply -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL  
+MegaSCU -LDRecon {-Start -rX [{-Add | -Rmv} -Physdrv[E0:S0,...]]}|-ShowProg|-ProgDsply 
+        -Lx -aN 
+MegaSCU -LdPdInfo -aN|-a0,1,2|-aALL 
+MegaSCU -LDGetNum -aN|-a0,1,2|-aALL 
+MegaSCU -LDBBMClr -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -getLdExpansionInfo -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LdExpansion -pN -dontExpandArray -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -GetBbtEntries -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -Cachecade -assign|-remove -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL
+MegaSCU -CfgLdAdd -rX[E0:S0,E1:S1,...] [WT|WB] [NORA|RA|ADRA] [Direct|Cached]
+        [CachedBadBBU|NoCachedBadBBU] [-szXXX [-szYYY ...]]
+        [-strpszM] [-Hsp[E0:S0,...]] [-AfterLdX] [-Force]|[FDE|CtrlBased]  
+        [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching]  [-Cache] [-enblPI] -aN 
+MegaSCU -CfgCacheCadeAdd [-rX] -Physdrv[E0:S0,...] {-Name LdNamestring} [WT|WB|ForcedWB] [-assign -LX|L0,2,5..|LALL] -aN|-a0,1,2|-aALL 
+MegaSCU -CfgEachDskRaid0 [WT|WB] [NORA|RA|ADRA] [Direct|Cached] [-enblPI] 
+        [CachedBadBBU|NoCachedBadBBU] [-strpszM]|[FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN|-a0,1,2|-aALL
+MegaSCU -CfgClr [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -CfgDsply -aN|-a0,1,2|-aALL 
+MegaSCU -CfgCacheCadeDsply -aN|-a0,1,2|-aALL 
+MegaSCU -CfgLdDel -LX|-L0,2,5...|-LALL [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -CfgCacheCadeDel -LX|-L0,2,5...|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -CfgFreeSpaceinfo -aN|-a0,1,2|-aALL 
+MegaSCU -CfgSpanAdd -r10 -Array0[E0:S0,E1:S1] -Array1[E0:S0,E1:S1] [-ArrayX[E0:S0,E1:S1] ...] 
+        [WT|WB] [NORA|RA|ADRA] [Direct|Cached] [CachedBadBBU|NoCachedBadBBU]
+        [-szXXX[-szYYY ...]][-strpszM][-AfterLdX][-Force]|[FDE|CtrlBased] 
+        [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN 
+MegaSCU -CfgSpanAdd -r50 -Array0[E0:S0,E1:S1,E2:S2,...] -Array1[E0:S0,E1:S1,E2:S2,...] 
+        [-ArrayX[E0:S0,E1:S1,E2:S2,...] ...] [WT|WB] [NORA|RA|ADRA] [Direct|Cached] 
+        [CachedBadBBU|NoCachedBadBBU][-szXXX[-szYYY ...]][-strpszM][-AfterLdX][-Force]| 
+        [FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN 
+MegaSCU -CfgSpanAdd -r60 -Array0[E0:S0,E1:S1,E2:S2,E3,S3...] -Array1[E0:S0,E1:S1,E2:S2,E3,S3...] 
+        [-ArrayX[E0:S0,E1:S1,E2:S2,E3,S3...] ...] [WT|WB] [NORA|RA|ADRA] [Direct|Cached] 
+        [CachedBadBBU|NoCachedBadBBU][-szXXX[-szYYY ...]][-strpszM][-AfterLdX][-Force]| 
+        [FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN 
+MegaSCU -CfgAllFreeDrv -rX [-SATAOnly] [-SpanCount XXX] [WT|WB] [NORA|RA|ADRA] 
+        [Direct|Cached] [CachedBadBBU|NoCachedBadBBU] [-strpszM]
+        [-HspCount XX [-HspType -Dedicated|-EnclAffinity|-nonRevertible]]|
+        [FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI]-aN 
+MegaSCU -CfgSave -f filename -aN   
+MegaSCU -CfgRestore -f filename -aN   
+MegaSCU -CfgForeign -Scan | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Dsply [x] | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Preview [x] | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Import [x] | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Clear [x]|[-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+        x - index of foreign configurations. Optional. All by default. 
+MegaSCU -AdpEventLog -GetEventLogInfo -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetEvents {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetSinceShutdown {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetSinceReboot {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -IncludeDeleted {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetLatest n {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetCCIncon -f <fileName> -LX|-L0,2,5...|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -Clear -aN|-a0,1,2|-aALL 
+MegaSCU -AdpBbuCmd -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuStatus -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuCapacityInfo -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuDesignInfo -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuProperties -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -BbuLearn -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -BbuMfgSleep -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -BbuMfgSeal -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -getBbumodes  -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -SetBbuProperties -f <fileName> -aN|-a0,1,2|-aALL 
+MegaSCU -AdpBbuCmd -GetGGEEPData offset [Hexaddress] NumBytes n -aN|-a0,1,2|-aALL 
+MegaSCU -AdpFacDefSet -aN 
+MegaSCU -AdpFactorySettings [-SetPciData|-SetMfgData|-SetMfcData|-SetSasAddress]   
+        -f FileName -aN
+        -SetPciData   reads INI file and sets FW PCI related data like Vendor 
+          ID, Device ID etc. 
+        -SetMfgData   reads INI file and updates FW manufacturing data like 
+          manufacturing data, revision, etc.  
+        -SetMfcData   reads INI file and updates FW manufacturing structure 
+        -SetSasAddress   reads INI file and updates SAS Address 
+MegaSCU -AdpSetSubOEMId XX -aN   
+          XX - sub-OEM ID in Hexadecimal.
+MegaSCU -AdpGetSubOEMId  -aN	
+MegaSCU -AdpSettings Read | Write -f FileName -aN 
+        -Read - reads INI file, forms MFC_DEFAULT structure and sends it to the FW. 
+        -Write - reads MFC_DEFAULT structure and creates an INI file 
+MegaSCU -AdpSetVerify -f fileName -aN|-a0,1,2|-aALL  
+MegaSCU -AdpSetVerifyRaw -f fileName -aN|-a0,1,2|-aALL  
+MegaSCU -adpUpdatePersistentPage -f filename - aN 
+MegaSCU -AdpNVRAM {-Read | -Write -f FileName}|-Clear 
+        [-StartOffset 0xXXXX ] [-EndOffset 0xXXXX] -aN 
+MegaSCU -AdpFwFlash -f filename [-NoSigChk] [-NoVerChk] [-FWTYPE n] -aN|-a0,1,2|-aALL  
+MegaSCU -AdpM0Flash -f filename  
+MegaSCU -BBUMfgSet -f filename  -aN|-a0,1,2|-aALL
+MegaSCU -adpFwDump 
+MegaSCU -AdpGetConnectorMode -ConnectorN|-Connector0,1|-ConnectorAll -aN|-a0,1,2|-aALL  
+MegaSCU -AdpSetConnectorMode -Internal|-External|-Auto -ConnectorN|-Connector0,1|-ConnectorAll -aN|-a0,1,2|-aALL  
+MegaSCU -PhyErrorCounters -aN|-a0,1,2|-aALL  
+MegaSCU -DirectPdMapping -Enbl|-Dsbl|-Dsply -aN|-a0,1,2|-aALL  
+MegaSCU -PDCpyBk -Start -PhysDrv[E0:S0,E1:S1] -aN|-a0,1,2|-aALL 
+MegaSCU -PDCpyBk -Stop|-Suspend|-Resume|-ShowProg|-ProgDsply -PhysDrv[E0:S0] -aN|-a0,1,2|-aALL 
+MegaSCU -PDInstantSecureErase -PhysDrv[E0:S0,E1:S1,...] | [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -LDMakeSecure -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -FullStrSeekTest -aN|-a0,1,2|-aALL 
+MegaSCU -Version -Cli|-Ctrl|-Pd -aN|-a0,1,2|-aALL 
+MegaSCU -CfgSpanAdd -rX -array0[E0:S1,E1:S1.....] array1[E0:S1,E1:S1.....] -szxxx -enblPI -aN|-a0,1,2|-aALL 
+MegaSCU -DestroySecurityKey | [-Force] -aN 
+MegaSCU -CreateSecurityKey -SecurityKey sssssssssss | [-Passphrase sssssssssss] |[-KeyID kkkkkkkkkkk] -aN 
+MegaSCU -CreateSecurityKey useEKMS -aN 
+MegaSCU -ChangeSecurityKey -OldSecurityKey sssssssssss | -SecurityKey sssssssssss| 
+          [-Passphrase sssssssssss] | [-KeyID kkkkkkkkkkk] -aN
+MegaSCU -ChangeSecurityKey -SecurityKey sssssssssss| 
+          [-Passphrase sssssssssss] | [-KeyID kkkkkkkkkkk] -aN
+MegaSCU -ChangeSecurityKey useEKMS -OldSecurityKey sssssssssss -aN
+MegaSCU -ChangeSecurityKey -useEKMS -aN
+MegaSCU -GetKeyID [-PhysDrv[E0:S0]] -aN 
+MegaSCU -SetKeyID -KeyID kkkkkkkkkkk -aN 
+MegaSCU -VerifySecurityKey -SecurityKey sssssssssss -aN 
+
+       sssssssssss  - It must be between eight and thirty-two 
+                      characters and contain at least one number, 
+                      one lowercase letter, one uppercase 
+                      letter and one non-alphanumeric character.
+       kkkkkkkkkkk -  Must be less than 256 characters. 
+MegaSCU -GetPreservedCacheList -aN|-a0,1,2|-aALL 
+MegaSCU -DiscardPreservedCache -Lx|-L0,1,2|-Lall -force -aN|-a0,1,2|-aALL 
+MegaSCU -AdpInfoCompare {-checkFw <string> | -checkID -hex | -checkBatt -val | -checkDimm -val} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpNameRtn -aN|-a0,1,2|-aALL 
+
+       sssssssssss  - It must be between eight and thirty-two 
+                      characters and contain at least one number, 
+                      one lowercase letter, one uppercase 
+                      letter and one non-alphanumeric character.
+       kkkkkkkkkkk -  Must be less than 256 characters. 
+MegaSCU -ShowSummary [-f filename] -aN
+MegaSCU -ELF -GetSafeId -aN|-a0,1,2|-aALL
+MegaSCU -ELF -ControllerFeatures -aN|-a0,1,2|-aALL
+MegaSCU -ELF -Applykey key <val> [Preview] -aN|-a0,1,2|-aALL
+MegaSCU -ELF -TransferToVault -aN|-a0,1,2|-aALL
+MegaSCU -ELF -DeactivateTrialKey -aN|-a0,1,2|-aALL
+MegaSCU -ELF -ReHostInfo -aN|-a0,1,2|-aALL
+MegaSCU -ELF -ReHostComplete -aN|-a0,1,2|-aALL
+MegaSCU -LDBreakMirror -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDViewMirror -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDJoinMirror -DataSrc <val> [-force] -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -SecureErase 
+	Start[
+		Simple|
+		[Normal   [ |ErasePattern ErasePatternA|ErasePattern ErasePatternA ErasePattern ErasePatternB]]|
+		[Thorough [ |ErasePattern ErasePatternA|ErasePattern ErasePatternA ErasePattern ErasePatternB]]]
+	| Stop
+	| ShowProg
+	| ProgDsply 
+	[-PhysDrv [E0:S0,E1:S1,...] | -Lx|-L0,1,2|-LALL] -aN|-a0,1,2|-aALL
+MegaSCU -Perfmon {-start -interval <val>} | {stop} | {-getresults -f <Filename>} -aN 
+MegaSCU -AdpGetVPD [-f filename] -aN|-a0,1,2 
+MegaSCU -AdpSetVPD -f filename -aN|-a0,1,2 
+MegaSCU -AdpGetPciInfo -aN|-a0,1,2|-aALL 
+MegaSCU -DpmStat -Dsply {lct | hist | ra | ext } [-physdrv[E0:S0]] -aN|-a0,1,2|-aALL  
+MegaSCU -DpmStat -Clear {lct | hist | ra | ext } -aN|-a0,1,2|-aALL  
+
+    Note: The directly connected drives can be specified as [:S] 
+
+    Wildcard '?' can be used to specify the enclosure ID for the drive in the 
+      only enclosure without direct connected device or the direct connected 
+      drives with no enclosure in the system.
+
+      Note:[-aALL] option assumes that the parameters specified are valid 
+       for all the Adapters. 
+
+    The following options may be given at the end of any command above: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+Exit Code: 0x00
+
+      MegaSCU SAS Customization Utility Ver 8.02.25  Nov 29, 2011
+
+    (c)Copyright 2011, LSI Corporation, All Rights Reserved.
+
+Exit Code: 0x00
+
+    MegaOEM Ver 8.00.23 May 17, 2010
+
+    (c)Copyright 2010, LSI Corporation, All Rights Reserved.
+
+
+NOTE: The following options may be given at the end of any command below: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+MegaOEM -v 
+MegaOEM -help|-h|? 
+MegaOEM -adpCount 
+MegaOEM -AdpAllInfo -aN|-a0,1,2|-aALL  
+MegaOEM -AdpSetSASA xxxxxxxxxxxxxxxx -aN   
+MegaOEM -AdpSettings Read | Write -f FileName -aN 
+        -Read - reads INI file, forms MFC_DEFAULT structure and sends it to the FW. 
+        -Write - reads MFC_DEFAULT structure and creates an INI file 
+MegaOEM -AdpMfgSet -f fileName -aN  
+MegaOEM -AdpSetVerify -f fileName -aN|-a0,1,2|-aALL  
+MegaOEM -AdpSetVerifyRaw -f fileName -aN|-a0,1,2|-aALL  
+MegaOEM -AdpSetSubOEMId XX -aN	
+         XX - sub-OEM ID in Hexadecimal.
+MegaOEM -AdpGetSubOEMId  -aN	
+MegaOEM -adpUpdatePersistentPage -f filename - aN 
+MegaOEM -AdpNVRAM {-Read | -Write -f FileName}|-Clear 
+        [-StartOffset 0xXXXX ] [-EndOffset 0xXXXX] -aN 
+
+      Note:[-aALL] option assumes that the parameters specified are valid 
+       for all the Adapters. 
+
+    The following options may be given at the end of any command above: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+Exit Code: 0x00
+
+      MegaSCU SAS Customization Utility Ver 8.02.25  Nov 29, 2011
+
+    (c)Copyright 2011, LSI Corporation, All Rights Reserved.
+
+
+NOTE: The following options may be given at the end of any command below: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+MegaSCU -v 
+MegaSCU -help|-h|? 
+MegaSCU -adpCount 
+MegaSCU -AdpSetProp {CacheFlushInterval -val} | { RebuildRate -val} 
+    | {PatrolReadRate -val} | {BgiRate -val} | {CCRate -val} | {ForceSGPIO -val} 
+    | {ReconRate -val} | {SpinupDriveCount -val} | {SpinupDelay -val} 
+    | {CoercionMode -val} | {ClusterEnable -val} | {PredFailPollInterval -val} 
+    | {BatWarnDsbl -val} | {EccBucketSize -val} | {EccBucketLeakRate -val} 
+    | {AbortCCOnError -val} | AlarmEnbl | AlarmDsbl | AlarmSilence 
+    | {SMARTCpyBkEnbl -val} | {SSDSMARTCpyBkEnbl -val} | NCQEnbl | NCQDsbl 
+    | {MaintainPdFailHistoryEnbl -val} | {RstrHotSpareOnInsert -val} 
+    | {DisableOCR -val} | {BootWithPinnedCache -val} | {enblPI -val} | {PreventPIImport -val} 
+    | {EnblSpinDownUnConfigDrvs -val}|{UseDiskActivityforLocate -val} -aN|-a0,1,2|-aALL 
+    | AutoEnhancedImportEnbl | AutoEnhancedImportDsbl -aN|-a0,1,2|-aALL 
+    | {ExposeEnclDevicesEnbl -val} -aN|-a0,1,2|-aALL 
+    | {SpinDownTime -val} -aN|-a0,1,2|-aALL 
+    | {SpinUpEncDrvCnt -val} -aN|-a0,1,2|-aALL 
+    | {SpinUpEncDelay -val} | {Perfmode -val} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpSetProp -AutoDetectBackPlaneDsbl -val -aN|-a0,1,2|-aALL 
+       val - 0=Enable Auto Detect of SGPIO and i2c SEP. 
+             1=Disable Auto Detect of SGPIO. 
+             2=Disable Auto Detect of i2c SEP. 
+             3=Disable Auto Detect of SGPIO and i2c SEP. 
+MegaSCU -AdpSetProp -CopyBackDsbl -val -aN|-a0,1,2|-aALL 
+       val - 0=Enable Copyback. 
+             1=Disable Copyback. 
+MegaSCU -AdpSetProp -EnableJBOD -val -aN|-a0,1,2|-aALL 
+       val - 0=Disable JBOD mode. 
+             1=Enable JBOD mode. 
+MegaSCU -AdpSetProp -DsblCacheBypass -val -aN|-a0,1,2|-aALL 
+       val - 0=Enable Cache Bypass. 
+             1=Disable Cache Bypass. 
+MegaSCU -AdpSetProp -LoadBalanceMode -val -aN|-a0,1,2|-aALL 
+       val - 0=Auto Load balance mode. 
+             1=Disable Load balance mode. 
+MegaSCU -AdpSetProp -UseFDEOnlyEncrypt -val -aN|-a0,1,2|-aALL 
+       val - 0=FDE and controller encryption (if HW supports) is allowed. 
+             1=Only support FDE encryption, disallow controller encryption. 
+MegaSCU -AdpSetProp -PrCorrectUncfgdAreas -val -aN|-a0,1,2|-aALL 
+       val - 0= Correcting Media error during PR is disabled. 
+             1=Correcting Media error during PR is allowed. 
+MegaSCU -AdpSetProp -DsblSpinDownHSP -val -aN|-a0,1,2|-aALL 
+       val - 0= Spinning down the Hot Spare is enabled. 
+             1=Spinning down the Hot Spare is disabled. 
+MegaSCU -AdpSetProp -DefaultLdPSPolicy -Automatic| -None | -Maximum| -MaximumWithoutCaching -aN|-a0,1,2|-aALL 
+MegaSCU -AdpSetProp -DisableLdPS -interval n1 -time n2 -aN|-a0,1,2|-aALL 
+       where n1 is the number of hours beginning at time n2 
+       where n2 is the number of minutes from 12:00am 
+MegaSCU -AdpSetProp -ENABLEEGHSP -val -aN|-a0,1,2|-aALL 
+       val - 0= Disabled Emergency GHSP. 
+             1= Enabled Emergency GHSP. 
+MegaSCU -AdpSetProp -ENABLEEUG -val -aN|-a0,1,2|-aALL 
+       val - 0= Disabled Emergency UG as Spare. 
+             1= Enabled Emergency UG as Spare. 
+MegaSCU -AdpSetProp -ENABLEESMARTER -val -aN|-a0,1,2|-aALL 
+       val - 0= Disabled Emergancy Spare as Smarter. 
+             1= Enabled Emergancy Spare as Smarter. 
+MegaSCU -AdpSetProp -DPMenable -val -aN|-a0,1,2|-aALL 
+       val - 0=Disable Drive Performance Monitoring . 
+             1=Enable Drive Performance Monitoring. 
+MegaSCU -AdpSetProp -SupportSSDPatrolRead -val -aN|-a0,1,2|-aALL 
+       val - 0=Disable Patrol read for SSD drives . 
+             1=Enable Patrol read for SSD drives. 
+MegaSCU -AdpGetProp CacheFlushInterval | RebuildRate | PatrolReadRate | ForceSGPIO 
+    | BgiRate | CCRate | ReconRate | SpinupDriveCount | SpinupDelay 
+    | CoercionMode | ClusterEnable | PredFailPollInterval | BatWarnDsbl 
+    | EccBucketSize | EccBucketLeakRate | EccBucketCount | AbortCCOnError 
+    | AlarmDsply | SMARTCpyBkEnbl | SSDSMARTCpyBkEnbl | NCQDsply 
+    | MaintainPdFailHistoryEnbl | RstrHotSpareOnInsert 
+    | EnblSpinDownUnConfigDrvs  | DisableOCR 
+    | BootWithPinnedCache | enblPI  | preventPiImport  | AutoEnhancedImportDsply | AutoDetectBackPlaneDsbl 
+    | CopyBackDsbl | LoadBalanceMode | UseFDEOnlyEncrypt | WBSupport | EnableJBOD 
+    | DsblCacheBypass | ExposeEnclDevicesEnbl | SpinDownTime 
+    | PrCorrectUncfgdAreas | UseDiskActivityforLocate 
+    | DefaultLdPSPolicy | DisableLdPsInterval | DisableLdPsTime | SpinUpEncDrvCnt | SpinUpEncDelay 
+    | ENABLEEGHSP | ENABLEEUG | ENABLEESMARTER | Perfmode | -DPMenable -aN|-a0,1,2|-aALL 
+    | DsblSpinDownHSP -aN|-a0,1,2|-aALL 
+MegaSCU -AdpAllInfo -aN|-a0,1,2|-aALL  
+MegaSCU -AdpGetTime -aN|-a0,1,2|-aALL  
+MegaSCU -AdpSetTime yyyymmdd hh:mm:ss -aN   
+MegaSCU -AdpSetSASA xxxxxxxxxxxxxxxx -aN   
+MegaSCU -AdpBIOS -Enbl |-Dsbl | -SOE | -BE | EnblAutoSelectBootLd | DsblAutoSelectBootLd | -Dsply -aN|-a0,1,2|-aALL 
+MegaSCU -AdpBootDrive {-Set {-Lx | -physdrv[E0:S0]}} | {-Unset {-Lx | -physdrv[E0:S0]}} |-Get -aN|-a0,1,2|-aALL 
+MegaSCU -AdpAutoRbld -Enbl|-Dsbl|-Dsply -aN|-a0,1,2|-aALL
+MegaSCU -AdpCacheFlush -aN|-a0,1,2|-aALL
+MegaSCU -AdpPR -Dsbl|EnblAuto|EnblMan|Start|Suspend|Resume|Stop|Info 
+         |{SetDelay Val}|{-SetStartTime yyyymmdd hh}|{maxConcurrentPD Val} -aN|-a0,1,2|-aALL
+MegaSCU -AdpCcSched -Dsbl|-Info|{-ModeConc | -ModeSeq [-ExcludeLD -LN|-L0,1,2]
+   [-SetStartTime yyyymmdd hh ] [-SetDelay val ] } -aN|-a0,1,2|-aALL
+MegaSCU -AdpCcSched -SetStartTime yyyymmdd hh -aN|-a0,1,2|-aALL
+MegaSCU -AdpCcSched -SetDelay val  -aN|-a0,1,2|-aALL
+MegaSCU -FwTermLog -BBUoff|BBUoffTemp|BBUon|BBUGet|Dsply|Clear -aN|-a0,1,2|-aALL
+MegaSCU -AdpAlILog -aN|-a0,1,2|-aALL 
+MegaSCU -AdpDiag [val] -aN|-a0,1,2|-aALL
+          val - Time in second.
+MegaSCU -AdpBatTest -aN|-a0,1,2|-aALL
+MegaSCU -AdpShutDown -aN|-a0,1,2|-aALL
+MegaSCU -AdpCfgPage -read|-write <isPersistent> pagetype <val> <pagenumber> <pageaddress> -f <filename> -aN 
+MegaSCU -AdpHwDevice -read deviceType <val> [bus <val> slaveAddr <val>] [[start offset] sz size] -f <filename> -aN 
+MegaSCU -AdpHwDevice -write deviceType <val> [bus <val> slaveAddr <val>] [start offset] -f <filename> -aN 
+MegaSCU -PDList -aN|-a0,1,2|-aALL 
+MegaSCU -PDGetNum -aN|-a0,1,2|-aALL 
+MegaSCU -pdInfo -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL  
+MegaSCU -PDOnline  -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDOffline -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDMakeGood -PhysDrv[E0:S0,E1:S1,...] | [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -PDMakeJBOD -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDHSP {-Set [-Dedicated [-ArrayN|-Array0,1,2...]] [-EnclAffinity] [-nonRevertible]} 
+     |-Rmv -PhysDrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PDRbld -Start|-Stop|-Suspend|-Resume|-ShowProg |-ProgDsply 
+        -PhysDrv [E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL  
+MegaSCU -PDClear -Start|-Stop|-ShowProg |-ProgDsply 
+        -PhysDrv [E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL  
+MegaSCU -PdLocate {[-start] | -stop} -physdrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PdMarkMissing -physdrv[E0:S0,E1:S1,...] -aN|-a0,1,2|-aALL 
+MegaSCU -PdGetMissing -aN|-a0,1,2|-aALL 
+MegaSCU -PdReplaceMissing -physdrv[E0:S0] -arrayA, -rowB -aN 
+MegaSCU -PdPrpRmv [-UnDo] -physdrv[E0:S0] -aN|-a0,1,2|-aALL  
+MegaSCU -EncInfo -aN|-a0,1,2|-aALL 
+MegaSCU -EncStatus -aN|-a0,1,2|-aALL 
+MegaSCU -PhyInfo -phyM -aN|-a0,1,2|-aALL  
+MegaSCU -PdFwDownload [offline][ForceActivate] {[-SataBridge] -PhysDrv[0:1] }|{-EncdevId[devId1]} -f <filename> -aN|-a0,1,2|-aALL 
+MegaSCU -LDInfo -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDSetProp  {-Name LdNamestring} | -RW|RO|Blocked|RemoveBlocked | WT|WB|ForcedWB [-Immediate] |RA|NORA|ADRA 
+        | Cached|Direct | -EnDskCache|DisDskCache | CachedBadBBU|NoCachedBadBBU
+        -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDSetPowerPolicy -Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching 
+        -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDGetProp  -Cache | -Access | -Name | -DskCache | -PSPolicy | Consistency -Lx|-L0,1,2|-LALL  
+        -aN|-a0,1,2|-aALL 
+MegaSCU -LDInit {-Start [-full]}|-Abort|-ShowProg|-ProgDsply -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -LDCC {-Start [-force]}|-Abort|-Suspend|-Resume|-ShowProg|-ProgDsply -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -LDBI -Enbl|-Dsbl|-getSetting|-Abort|-Suspend|-Resume|-ShowProg|-ProgDsply -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL  
+MegaSCU -LDRecon {-Start -rX [{-Add | -Rmv} -Physdrv[E0:S0,...]]}|-ShowProg|-ProgDsply 
+        -Lx -aN 
+MegaSCU -LdPdInfo -aN|-a0,1,2|-aALL 
+MegaSCU -LDGetNum -aN|-a0,1,2|-aALL 
+MegaSCU -LDBBMClr -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -getLdExpansionInfo -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LdExpansion -pN -dontExpandArray -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -GetBbtEntries -Lx|-L0,1,2|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -Cachecade -assign|-remove -Lx|-L0,1,2|-LALL -aN|-a0,1,2|-aALL
+MegaSCU -CfgLdAdd -rX[E0:S0,E1:S1,...] [WT|WB] [NORA|RA|ADRA] [Direct|Cached]
+        [CachedBadBBU|NoCachedBadBBU] [-szXXX [-szYYY ...]]
+        [-strpszM] [-Hsp[E0:S0,...]] [-AfterLdX] [-Force]|[FDE|CtrlBased]  
+        [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching]  [-Cache] [-enblPI] -aN 
+MegaSCU -CfgCacheCadeAdd [-rX] -Physdrv[E0:S0,...] {-Name LdNamestring} [WT|WB|ForcedWB] [-assign -LX|L0,2,5..|LALL] -aN|-a0,1,2|-aALL 
+MegaSCU -CfgEachDskRaid0 [WT|WB] [NORA|RA|ADRA] [Direct|Cached] [-enblPI] 
+        [CachedBadBBU|NoCachedBadBBU] [-strpszM]|[FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN|-a0,1,2|-aALL
+MegaSCU -CfgClr [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -CfgDsply -aN|-a0,1,2|-aALL 
+MegaSCU -CfgCacheCadeDsply -aN|-a0,1,2|-aALL 
+MegaSCU -CfgLdDel -LX|-L0,2,5...|-LALL [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -CfgCacheCadeDel -LX|-L0,2,5...|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -CfgFreeSpaceinfo -aN|-a0,1,2|-aALL 
+MegaSCU -CfgSpanAdd -r10 -Array0[E0:S0,E1:S1] -Array1[E0:S0,E1:S1] [-ArrayX[E0:S0,E1:S1] ...] 
+        [WT|WB] [NORA|RA|ADRA] [Direct|Cached] [CachedBadBBU|NoCachedBadBBU]
+        [-szXXX[-szYYY ...]][-strpszM][-AfterLdX][-Force]|[FDE|CtrlBased] 
+        [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN 
+MegaSCU -CfgSpanAdd -r50 -Array0[E0:S0,E1:S1,E2:S2,...] -Array1[E0:S0,E1:S1,E2:S2,...] 
+        [-ArrayX[E0:S0,E1:S1,E2:S2,...] ...] [WT|WB] [NORA|RA|ADRA] [Direct|Cached] 
+        [CachedBadBBU|NoCachedBadBBU][-szXXX[-szYYY ...]][-strpszM][-AfterLdX][-Force]| 
+        [FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN 
+MegaSCU -CfgSpanAdd -r60 -Array0[E0:S0,E1:S1,E2:S2,E3,S3...] -Array1[E0:S0,E1:S1,E2:S2,E3,S3...] 
+        [-ArrayX[E0:S0,E1:S1,E2:S2,E3,S3...] ...] [WT|WB] [NORA|RA|ADRA] [Direct|Cached] 
+        [CachedBadBBU|NoCachedBadBBU][-szXXX[-szYYY ...]][-strpszM][-AfterLdX][-Force]| 
+        [FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI] -aN 
+MegaSCU -CfgAllFreeDrv -rX [-SATAOnly] [-SpanCount XXX] [WT|WB] [NORA|RA|ADRA] 
+        [Direct|Cached] [CachedBadBBU|NoCachedBadBBU] [-strpszM]
+        [-HspCount XX [-HspType -Dedicated|-EnclAffinity|-nonRevertible]]|
+        [FDE|CtrlBased] [-Default| -Automatic| -None| -Maximum| -MaximumWithoutCaching] [-Cache] [-enblPI]-aN 
+MegaSCU -CfgSave -f filename -aN   
+MegaSCU -CfgRestore -f filename -aN   
+MegaSCU -CfgForeign -Scan | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Dsply [x] | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Preview [x] | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Import [x] | [-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+MegaSCU -CfgForeign -Clear [x]|[-SecurityKey sssssssssss] -aN|-a0,1,2|-aALL    
+        x - index of foreign configurations. Optional. All by default. 
+MegaSCU -AdpEventLog -GetEventLogInfo -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetEvents {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetSinceShutdown {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetSinceReboot {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -IncludeDeleted {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetLatest n {-info -warning -critical -fatal} {-f <fileName>} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -GetCCIncon -f <fileName> -LX|-L0,2,5...|-LALL -aN|-a0,1,2|-aALL 
+MegaSCU -AdpEventLog -Clear -aN|-a0,1,2|-aALL 
+MegaSCU -AdpBbuCmd -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuStatus -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuCapacityInfo -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuDesignInfo -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -GetBbuProperties -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -BbuLearn -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -BbuMfgSleep -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -BbuMfgSeal -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -getBbumodes  -aN|-a0,1,2|-aALL  
+MegaSCU -AdpBbuCmd -SetBbuProperties -f <fileName> -aN|-a0,1,2|-aALL 
+MegaSCU -AdpBbuCmd -GetGGEEPData offset [Hexaddress] NumBytes n -aN|-a0,1,2|-aALL 
+MegaSCU -AdpFacDefSet -aN 
+MegaSCU -AdpFactorySettings [-SetPciData|-SetMfgData|-SetMfcData|-SetSasAddress]   
+        -f FileName -aN
+        -SetPciData   reads INI file and sets FW PCI related data like Vendor 
+          ID, Device ID etc. 
+        -SetMfgData   reads INI file and updates FW manufacturing data like 
+          manufacturing data, revision, etc.  
+        -SetMfcData   reads INI file and updates FW manufacturing structure 
+        -SetSasAddress   reads INI file and updates SAS Address 
+MegaSCU -AdpSetSubOEMId XX -aN   
+          XX - sub-OEM ID in Hexadecimal.
+MegaSCU -AdpGetSubOEMId  -aN	
+MegaSCU -AdpSettings Read | Write -f FileName -aN 
+        -Read - reads INI file, forms MFC_DEFAULT structure and sends it to the FW. 
+        -Write - reads MFC_DEFAULT structure and creates an INI file 
+MegaSCU -AdpSetVerify -f fileName -aN|-a0,1,2|-aALL  
+MegaSCU -AdpSetVerifyRaw -f fileName -aN|-a0,1,2|-aALL  
+MegaSCU -adpUpdatePersistentPage -f filename - aN 
+MegaSCU -AdpNVRAM {-Read | -Write -f FileName}|-Clear 
+        [-StartOffset 0xXXXX ] [-EndOffset 0xXXXX] -aN 
+MegaSCU -AdpFwFlash -f filename [-NoSigChk] [-NoVerChk] [-FWTYPE n] -aN|-a0,1,2|-aALL  
+MegaSCU -AdpM0Flash -f filename  
+MegaSCU -BBUMfgSet -f filename  -aN|-a0,1,2|-aALL
+MegaSCU -adpFwDump 
+MegaSCU -AdpGetConnectorMode -ConnectorN|-Connector0,1|-ConnectorAll -aN|-a0,1,2|-aALL  
+MegaSCU -AdpSetConnectorMode -Internal|-External|-Auto -ConnectorN|-Connector0,1|-ConnectorAll -aN|-a0,1,2|-aALL  
+MegaSCU -PhyErrorCounters -aN|-a0,1,2|-aALL  
+MegaSCU -DirectPdMapping -Enbl|-Dsbl|-Dsply -aN|-a0,1,2|-aALL  
+MegaSCU -PDCpyBk -Start -PhysDrv[E0:S0,E1:S1] -aN|-a0,1,2|-aALL 
+MegaSCU -PDCpyBk -Stop|-Suspend|-Resume|-ShowProg|-ProgDsply -PhysDrv[E0:S0] -aN|-a0,1,2|-aALL 
+MegaSCU -PDInstantSecureErase -PhysDrv[E0:S0,E1:S1,...] | [-Force] -aN|-a0,1,2|-aALL 
+MegaSCU -LDMakeSecure -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -FullStrSeekTest -aN|-a0,1,2|-aALL 
+MegaSCU -Version -Cli|-Ctrl|-Pd -aN|-a0,1,2|-aALL 
+MegaSCU -CfgSpanAdd -rX -array0[E0:S1,E1:S1.....] array1[E0:S1,E1:S1.....] -szxxx -enblPI -aN|-a0,1,2|-aALL 
+MegaSCU -DestroySecurityKey | [-Force] -aN 
+MegaSCU -CreateSecurityKey -SecurityKey sssssssssss | [-Passphrase sssssssssss] |[-KeyID kkkkkkkkkkk] -aN 
+MegaSCU -CreateSecurityKey useEKMS -aN 
+MegaSCU -ChangeSecurityKey -OldSecurityKey sssssssssss | -SecurityKey sssssssssss| 
+          [-Passphrase sssssssssss] | [-KeyID kkkkkkkkkkk] -aN
+MegaSCU -ChangeSecurityKey -SecurityKey sssssssssss| 
+          [-Passphrase sssssssssss] | [-KeyID kkkkkkkkkkk] -aN
+MegaSCU -ChangeSecurityKey useEKMS -OldSecurityKey sssssssssss -aN
+MegaSCU -ChangeSecurityKey -useEKMS -aN
+MegaSCU -GetKeyID [-PhysDrv[E0:S0]] -aN 
+MegaSCU -SetKeyID -KeyID kkkkkkkkkkk -aN 
+MegaSCU -VerifySecurityKey -SecurityKey sssssssssss -aN 
+
+       sssssssssss  - It must be between eight and thirty-two 
+                      characters and contain at least one number, 
+                      one lowercase letter, one uppercase 
+                      letter and one non-alphanumeric character.
+       kkkkkkkkkkk -  Must be less than 256 characters. 
+MegaSCU -GetPreservedCacheList -aN|-a0,1,2|-aALL 
+MegaSCU -DiscardPreservedCache -Lx|-L0,1,2|-Lall -force -aN|-a0,1,2|-aALL 
+MegaSCU -AdpInfoCompare {-checkFw <string> | -checkID -hex | -checkBatt -val | -checkDimm -val} -aN|-a0,1,2|-aALL 
+MegaSCU -AdpNameRtn -aN|-a0,1,2|-aALL 
+
+       sssssssssss  - It must be between eight and thirty-two 
+                      characters and contain at least one number, 
+                      one lowercase letter, one uppercase 
+                      letter and one non-alphanumeric character.
+       kkkkkkkkkkk -  Must be less than 256 characters. 
+MegaSCU -ShowSummary [-f filename] -aN
+MegaSCU -ELF -GetSafeId -aN|-a0,1,2|-aALL
+MegaSCU -ELF -ControllerFeatures -aN|-a0,1,2|-aALL
+MegaSCU -ELF -Applykey key <val> [Preview] -aN|-a0,1,2|-aALL
+MegaSCU -ELF -TransferToVault -aN|-a0,1,2|-aALL
+MegaSCU -ELF -DeactivateTrialKey -aN|-a0,1,2|-aALL
+MegaSCU -ELF -ReHostInfo -aN|-a0,1,2|-aALL
+MegaSCU -ELF -ReHostComplete -aN|-a0,1,2|-aALL
+MegaSCU -LDBreakMirror -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDViewMirror -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -LDJoinMirror -DataSrc <val> [-force] -Lx|-L0,1,2,...|-Lall -aN|-a0,1,2|-aALL 
+MegaSCU -SecureErase 
+	Start[
+		Simple|
+		[Normal   [ |ErasePattern ErasePatternA|ErasePattern ErasePatternA ErasePattern ErasePatternB]]|
+		[Thorough [ |ErasePattern ErasePatternA|ErasePattern ErasePatternA ErasePattern ErasePatternB]]]
+	| Stop
+	| ShowProg
+	| ProgDsply 
+	[-PhysDrv [E0:S0,E1:S1,...] | -Lx|-L0,1,2|-LALL] -aN|-a0,1,2|-aALL
+MegaSCU -Perfmon {-start -interval <val>} | {stop} | {-getresults -f <Filename>} -aN 
+MegaSCU -AdpGetVPD [-f filename] -aN|-a0,1,2 
+MegaSCU -AdpSetVPD -f filename -aN|-a0,1,2 
+MegaSCU -AdpGetPciInfo -aN|-a0,1,2|-aALL 
+MegaSCU -DpmStat -Dsply {lct | hist | ra | ext } [-physdrv[E0:S0]] -aN|-a0,1,2|-aALL  
+MegaSCU -DpmStat -Clear {lct | hist | ra | ext } -aN|-a0,1,2|-aALL  
+
+    Note: The directly connected drives can be specified as [:S] 
+
+    Wildcard '?' can be used to specify the enclosure ID for the drive in the 
+      only enclosure without direct connected device or the direct connected 
+      drives with no enclosure in the system.
+
+      Note:[-aALL] option assumes that the parameters specified are valid 
+       for all the Adapters. 
+
+    The following options may be given at the end of any command above: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                 [-] is optional. 
+                  N - Number of lines per page. 
+
+Exit Code: 0x00
+FW Dump has not been carried out on any Controller
+
+Exit Code: 0x00
+
+      MegaSCU SAS Customization Utility Ver 8.02.25  Nov 29, 2011
+
+    (c)Copyright 2011, LSI Corporation, All Rights Reserved.
+
+        	AdpFwDump 
+        	---------
+
+Syntax: MegaSCU -adpFwDump -f filename
+
+Description: 
+        This option will download the firmware dump to the file mentioned in the command.
+
+Exit Code: 0x00
+Unexpected parameter f given in the command line.
+Unexpected parameter fwdump.rom given in the command line.
+FW Dump has not been carried out on any Controller
+
+Exit Code: 0x00

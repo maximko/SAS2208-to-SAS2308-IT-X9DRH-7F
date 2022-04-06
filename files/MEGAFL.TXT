@@ -1,0 +1,19 @@
+DOS/32A warning (9004): mouse initialization failed
+                                     
+
+ MegaCLI Firmware Flash Tool  Ver 8.01.10 February 17, 2011
+
+    (c)Copyright 2011, LSI Corporation, All Rights Reserved.
+
+MegaFl -v 
+MegaFl -help|-h|? 
+MegaFl -adpCount 
+MegaFl -AdpFwFlash -f filename [-NoSigChk -NoVerChk] -aN|-a0,1,2|-aALL  
+MegaFl -AdpM0Flash -f filename  
+
+    The following options may be given at the end of any command above: 
+
+    [-Silent] [-AppLogFile filename] [-NoLog] [-page[N]] 
+                  N - Number of lines per page. 
+
+Exit Code: 0x00
