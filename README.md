@@ -28,7 +28,34 @@ mkdir /mnt/lsi-SAS2208-flash && mount /dev/sdX1 /mnt/lsi-SAS2208-flash
 ```shell
 cp SAS2208-to-SAS2308-IT-X9DRH-7F/files/* /mnt/lsi-SAS2208-flash && umount /mnt/lsi-SAS2208-flash
 ```
-6. Follow the steps from [this video](//www.youtube.com/watch?v=CDatT8fn9KQ) to flash your controller. Linux x86_64 binary of sas2flash is also available in the repo.
+6. Follow the steps from [this video](//www.youtube.com/watch?v=CDatT8fn9KQ) to flash your controller. Linux x86_64 binary of sas2flash is also available in the repo. The steps in short:
+```shell
+# Under linux Backup yous SAS Address (you can use megacli in dos too
+$ sudo storcli /c0 show all | grep -i "sas address"
+
+# Under FreeDOS, backup card config and prepare to flash
+> megarec -readsbr 0 2208_backup.sbr
+> megarec -readspd 0 2208_backup.spd
+> megarec -writesbr 0 SMC2308.SBR
+> megarec -cleanflash 0
+
+# Find the USB filesystem (usually fs0: or fs1:)
+> map
+
+# Reboot to UEFI from same flash drive (use dir to see if the fs is correct)
+> fs1:
+
+# Verify the wiped card is detected
+> sas2flash.efi -list
+
+# Flash firmware and option ROM
+> sas2flash.efi -c 0 -o -f 2308T207.ROM -b mptsas2.rom
+
+# restore SAS address (you may need restart, can be any address start with 500 + random hex numbers)
+> sas2flash.efi -c 0 -o -sasadd 500304801a3xxxxx
+
+# use same commands but your backup SBR + the official Broadcom ROM for your card to restore RAID
+```
 
 ## Everything else
 Feel free to open an issue if you need any help. Star and follow are appreciated 😉
